@@ -24,7 +24,7 @@ function forkRepo() {
 }
 
 function showResults(json) {
-document.getElementById('repositories').innerHTML = <a>json.html_url</a>
+  document.getElementById('repositories').innerHTML = <a href = "json.html_url" type =""</a>
   //use this function to display the results from forking via the API
 }
 
