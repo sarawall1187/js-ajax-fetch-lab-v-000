@@ -26,6 +26,7 @@ function forkRepo() {
 function showResults(json) {
   document.getElementById('results').innerHTML = `<a href=${json.html_url}>${json.html_url}</a>`;
 }
+
 function createIssue() {
   const repo = `${user}/js-ajax-fetch-lab`;
   const url = `${baseURL}/repos/${repo}/issues`;
