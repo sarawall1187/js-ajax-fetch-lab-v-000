@@ -47,5 +47,7 @@ function createIssue() {
 }
 
 function getIssues() {
+  const repo = `${user}/js-ajax-fetch-lab`;
+  const url = `${baseURL}/repos/${repo}/issues`;
   //once an issue is submitted, fetch all open issues to see the issues you are creating
 }
