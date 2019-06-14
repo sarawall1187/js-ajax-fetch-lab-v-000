@@ -4,10 +4,10 @@ const user = 'sarawall1187';
 const token = 'da0045433ae6aaa22048f1cb0167c10a90cc1891';
 
 function getToken() {
-   return token;
+  //  return token;
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  // return '';
+  return '';
 }
 
 function forkRepo() {
