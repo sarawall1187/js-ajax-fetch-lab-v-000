@@ -11,8 +11,9 @@ function getToken() {
 }
 
 function forkRepo() {
-  const url = `${baseURL}/repos/${repo}/forks`
+  
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
+  const url = `${baseURL}/repos/${repo}/forks`
   fetch(website + user + repo.slice(19), {
   headers: {
     Authorization: `token ${token}`
