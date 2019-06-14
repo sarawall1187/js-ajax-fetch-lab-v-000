@@ -28,7 +28,7 @@ function showResults(json) {
 }
 
 function createIssue() {
-  const repo = `${user}/js-ajax-fetch-lab `;
+  const repo = `${user}/js-ajax-fetch-lab`;
   const url = `${baseURL}/repos/${repo}/issues`;
   fetch(url, {
     method: 'POST',
