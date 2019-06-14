@@ -37,7 +37,7 @@ function createIssue() {
     }
   })
     .then(res => res.json())
-    .then(json => getIssues(json));
+    .then(getIssues(json));
   //use this function to create an issue based on the values input in index.html
 }
 
