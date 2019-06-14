@@ -26,20 +26,25 @@ function forkRepo() {
 function showResults(json) {
   document.getElementById('results').innerHTML = `<a href=${json.html_url}>${json.html_url}</a>`;
 }
-
 function createIssue() {
   const repo = `${user}/js-ajax-fetch-lab`;
   const url = `${baseURL}/repos/${repo}/issues`;
+  const postData = {
+    title: document.getElementById('title').value,
+    body: document.getElementById('body').value
+  };
+
   fetch(url, {
     method: 'POST',
+    body: JSON.stringify(postData),
     headers: {
       Authorization: `token ${getToken()}`
     }
   })
     .then(res => res.json())
     .then(json => getIssues());
-  //use this function to create an issue based on the values input in index.html
 }
+
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
